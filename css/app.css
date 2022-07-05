@@ -1,6 +1,21 @@
 /* ----- HEADER ----- */
 
 .nav{
+    color: white;
+}
+
+.nav .container .nav-logo{
+display: flex;
+align-items: center;
+padding: 10px;
+}
+
+.nav-list ul{
+    display: flex;
+    gap: 20px;
+}
+
+.nav .container{
     display: flex;
     justify-content: space-between;
     align-items: center;

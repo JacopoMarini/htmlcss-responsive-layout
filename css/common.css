@@ -10,9 +10,28 @@ html{
 
 .container{
     width: 1200px;
+    margin: 0 auto;
+}
+
+ul, ol, li, menu{
+    list-style: none;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
 }
 
 .blue{
     background-color: #0084FD;
+}
+
+.button{
+    background-color: white;
+    color: black;
+    padding: 5px;
+    line-height: 50%;
+    border: 1px solid white;
+    border-radius: 20px;
 }
 
