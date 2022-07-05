@@ -25,6 +25,7 @@ padding: 10px;
 
 .hero{
     padding-top: 75px;
+    padding-bottom: 86px;
 }
 
 .hero .container{
@@ -82,4 +83,60 @@ padding: 10px;
 .card .hero-title{
     padding-top: 30px;
     padding-bottom: 10px;
+}
+
+/* ----- PLANNING ----- */
+
+
+.planning-left, .planning-right{
+    width: 50%;
+}
+
+
+.planning-title{
+    color: white;
+    padding-bottom: 40px;
+}
+
+.planning-p{
+    color: white;
+    padding-bottom: 46px;
+}
+
+.wrapper{
+    display: flex;
+    column-gap: 20px;
+}
+
+.planning-right{
+    margin-top: 100px;
+    align-self: flex-end;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.planning-left img{
+    width: 100%;
+}
+
+.planning-right img{
+    width: 100%;
+}
+
+.right-descr{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 0;
+    align-items: center;
+}
+
+.right-descr p{
+    margin: 20px;
+}
+
+.arrow{
+    background-color: #9792E4;
+    border-radius: 100%;
+    padding: 20px;
 }

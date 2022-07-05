@@ -18,6 +18,11 @@ header{
     margin: 0 auto;
 }
 
+.container-small{
+    width: 878px;
+    margin: 0 auto;
+}
+
 ul, ol, li, menu{
     list-style: none;
     text-decoration: none;
@@ -53,4 +58,8 @@ a{
 .card{
     text-align: center;
     padding: 20px;
+}
+
+.purple{
+    background-color: #9792E4;
 }
