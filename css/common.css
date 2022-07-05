@@ -30,6 +30,7 @@ ul, ol, li, menu{
 
 a{
     text-decoration: none;
+    color: white;
 }
 
 .button{
@@ -62,4 +63,27 @@ a{
 
 .purple{
     background-color: #9792E4;
+    padding-bottom: 20px;
+}
+
+.propic{
+    width: 20%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.profile-name{
+    color: white;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+.button_purple{
+    margin-bottom: 20px;
+    color: white;
+    background-color: #9792E4;
+    padding: 10px 30px;
 }
