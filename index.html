@@ -7,255 +7,145 @@
     <title>Document</title>
     <script src="https://kit.fontawesome.com/b25bf850e3.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="css/common.css">
 </head>
 <body>
 
-    <header>
-        <!-- Navbar con container per centrare il contenuto -->
-        <div class="nav blue">
-            <div class="container">
-                <div class="nav-logo">
-                    <img src="img/logo.png" alt="logo">
-                </div>
+    <header class="main-header">
+        <div class="container">
+           <div class="row">
+            <figure class="header__logo">
+                <img src="img/logo.png" alt="logo">
+            </figure>
 
-                <div class="nav-list">
-                    <ul>
-                        <li><a href="#">Planning</a></li>
-                        <li><a href="#">Testimonials</a></li>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#"><button class="button">Get Started</button></a></li>
-                    </ul>
-                </div>
-            </div>
+            <nav class="main-nav">
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a href="#">Planning</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#">Testimonials</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#">Features</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#">About us</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="button button--white" href="#">Get Started</a>
+                    </li>
+                </ul>
+            </nav>
+           </div>
         </div>
     </header>
 
     <main>
-            <!-- Section contenente l'hero con container per centrare -->
-        <section class="hero">
+        <section class="section hero">
             <div class="container">
-                <div class="row">
-                    <div class="card-big">
-                        <div class="card-big-content">
-                            <h2 class="hero-title">
-                                Get a demo application
-                            </h2>
-    
-                            <p class="hero-p">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit laborum illo molestias tempore reprehenderit est nemo debitis cumque! Fugit?
-                            </p>
-
-                            <button class="button blue"><i class="fa-brands fa-apple"></i> App Store</button>
+                <ul class="row">
+                    <li class="col col-span-2">
+                        <div class="card card--landscape rounded bg-lightblue">
+                            <div class="row">
+                                <div class="col content-wrapper">
+                                    <h3 class="card__title">Clean Code</h3>
+                                    <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni modi laudantium eos, corrupti quibusdam neque repellendus quisquam explicabo aliquid!</p>
+                                    <a class="button button--blue" href="#"><i class="fa-brands fa-apple"></i> App Store</a>
+                                </div>
+                                <div class="col thumbnail-wrapper">
+                                    <img src="img/phone.png" alt="">
+                                </div>
+                            </div>
                         </div>
+                    </li>
 
-                        <div class="card-big-img">
-                            <img src="img/phone.png" alt="phone">
+                    <li class="col">
+                        <div class="card rounded bg-lightblue">
+                            <div class="card__icon">
+                                <i class="fa-solid fa-file-code fa-2xl"></i>
+                            </div>
+                            <h3 class="card__title">Clean Code</h3>
+                            <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni modi laudantium eos, corrupti quibusdam neque repellendus quisquam explicabo aliquid!</p>
+                         
                         </div>
-                    </div>
-                    <div class="card">
-                        <h2 class="hero-title"><i class="fa-solid fa-file-code fa-2xl"></i></h2>
-                        <h2 class="hero-title">Clean Code </h2>
-                        <p class="hero-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut beatae vero unde fugiat animi quasi doloremque omnis enim a?</p>
-                    </div>
-                    <div class="card">
-                        <h2 class="hero-title"><i class="fa-solid fa-compass-drafting fa-2xl"></i></h2>
-                        <h2 class="hero-title">Web Design </h2>
-                        <p class="hero-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut beatae vero unde fugiat animi quasi doloremque omnis enim a?</p>
-                    </div>
-                    <div class="card">
-                        <h2 class="hero-title"><i class="fa-solid fa-laptop-code fa-2xl"></i></h2>
-                        <h2 class="hero-title">Developement </h2>
-                        <p class="hero-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut beatae vero unde fugiat animi quasi doloremque omnis enim a?</p>
-                    </div>
-                    <div class="card">
-                        <h2 class="hero-title"><i class="fa-solid fa-bullhorn fa-2xl"></i></h2>
-                        <h2 class="hero-title">Branding </h2>
-                        <p class="hero-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut beatae vero unde fugiat animi quasi doloremque omnis enim a?</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+                    </li>
 
-        <section class="planning purple">
-            <div class="container-small">
-                <div class="wrapper">
-                    <div class="planning-left">
-                        <img src="img/planning1.png" alt="Planning">
-                        <h2 class="planning-title">Strategic Planning</h2>
-                        <p class="planning-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi debitis ab facere, dignissimos quos ipsam rerum iusto nam adipisci. Beatae perspiciatis ut quasi dolorem consequatur illo ab impedit voluptas numquam eveniet enim, rerum fugit?</p>
-                    </div>
+                    <li class="col">
+                        <div class="card rounded bg-lightblue">
+                            <div class="card__icon">
+                                <i class="fa-solid fa-file-code fa-2xl"></i>
+                            </div>
+                            <h3 class="card__title">Clean Code</h3>
+                            <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni modi laudantium eos, corrupti quibusdam neque repellendus quisquam explicabo aliquid!</p>
+                          
+                        </div>
+                    </li>
 
-                    <div class="planning-right">
-                        <img src="img/planning2.png" alt="Planning second">
+                    <li class="col">
+                        <div class="card rounded bg-lightblue">
+                            <div class="card__icon">
+                                <i class="fa-solid fa-file-code fa-2xl"></i>
+                            </div>
+                            <h3 class="card__title">Clean Code</h3>
+                            <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni modi laudantium eos, corrupti quibusdam neque repellendus quisquam explicabo aliquid!</p>
                         
-                        <div class="right-descr">
-                            <h2>App Developement</h2>
-                            <p>Develop an on-demand app for your delivery business to reach your targeted customers without any interruption.</p>
-                            
-                            <p class="arrow"><i class="fa-solid fa-arrow-down"></i></p>
+                        </div>
+                    </li>
+
+                    <li class="col">
+                        <div class="card rounded bg-lightblue">
+                            <div class="card__icon">
+                                <i class="fa-solid fa-file-code fa-2xl"></i>
+                            </div>
+                            <h3 class="card__title">Clean Code</h3>
+                            <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni modi laudantium eos, corrupti quibusdam neque repellendus quisquam explicabo aliquid!</p>
+                        
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section planning">
+            <div class="container-sm">
+                <div class="row">
+                    <div class="col">
+                        <figure class="planning__featured-image">
+                            <img src="img/planning1.png" alt="">
+                        </figure>
+
+                        <h2 class="planning__title">
+                            Strategic Planning
+                        </h2>
+
+                        <p class="planning__description">
+                            Lorem ipsum dolor sit amet.
+                            Illo distinctio iusto culpa nulla.
+                            Sed repellendus obcaecati animi et!
+                            Ut sint alias aliquam tempore.
+                            Ducimus nostrum illum impedit numquam!
+                        </p>
+
+                    </div>
+                    <div class="col">
+                        <div class="card card-planning rounded-lg bg-white">
+                            <figure class="card-image">
+                                <img src="img/planning2.png" alt="">
+                            </figure>
+                            <h4 class="card__title">App Development</h4>
+                            <p class="card__description italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, modi. Nemo exercitationem neque quaerat. Sit facilis qui quia ab.</p>
+                            <button class="button button--violet button--circle">
+                                <i class="fa solid fa-arrow-down-long"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
-
         </section>
-
-        <section class="partners">
-            <div class="container">
-                <div class="intestazione">
-                    <p class="testimonials">TESTIMONIALS</p>
-                    <h2 class="partners-title">
-                        We are committed expert partners 
-                    </h2>
-
-                    <p class="partners-p">
-                      We place huge value on strong relationships and have seen the benefit they bring to our business. Customer feedback is vital in helping us to get it right.  
-                    </p>
-                </div>
-
-                <div class="profile purple">
-                    
-                    <div class="propic nat"></div>
-
-                    <div class="profile-descr">
-                        <p class="profile-p">
-                            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo odio nemo est distinctio? Nisi, hic possimus. Laboriosam minima, aperiam facere dolores magnam culpa aliquid modi suscipit soluta deserunt ex quam?"
-                        </p>
-
-                        <p class="profile-name">NAT REYNOLDS</p>
-                    </div>
-
-                </div>
-
-                <div class="profile purple">
-                    <div class="propic celia"></div>
-
-                    <div class="profile-descr">
-                        <p class="profile-p">
-                            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo odio nemo est distinctio? Nisi, hic possimus. Laboriosam minima, aperiam facere dolores magnam culpa aliquid modi suscipit soluta deserunt ex quam?"
-                        </p>
-
-                        <p class="profile-name">CELIA ALMEDA</p>
-                    </div>
-                </div>
-
-                <div class="profile purple">
-                    <div class="propic bob"></div>
-
-                    <div class="profile-descr">
-                        <p class="profile-p">
-                            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo odio nemo est distinctio? Nisi, hic possimus. Laboriosam minima, aperiam facere dolores magnam culpa aliquid modi suscipit soluta deserunt ex quam?"
-                        </p>
-
-                        <p class="profile-name">BOB ROBERTS</p>
-                    </div>
-                </div>
-
-            </div>
-
-        </section>
-
-        <section class="benefits purple">
-            <div class="container">
-                <div class="row">
-                    <div class="col-6">
-                        <h1 class="number">
-                            01
-                        </h1>
-                        <p class="subtitle">
-                            High Quality
-                        </p>
-                        <p class="col-p">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam accusantium necessitatibus ullam eius suscipit quae, commodi a natus odit repellat quasi laudantium tenetur quibusdam porro?
-                        </p>
-
-                        <button class="button button_purple">more</button>
-                    </div>
-
-                    <div class="col-6">
-                        <h1 class="number">
-                            02
-                        </h1>
-                        <p class="subtitle">
-                            Creative Team
-                        </p>
-                        <p class="col-p">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam accusantium necessitatibus ullam eius suscipit quae, commodi a natus odit repellat quasi laudantium tenetur quibusdam porro?
-                        </p>
-
-                        <button class="button button_purple">more</button>
-                    </div>
-
-                    <div class="col-6">
-                        <h1 class="number">
-                            03
-                        </h1>
-                        <p class="subtitle">
-                            Amazing Results
-                        </p>
-                        <p class="col-p">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam accusantium necessitatibus ullam eius suscipit quae, commodi a natus odit repellat quasi laudantium tenetur quibusdam porro?
-                        </p>
-
-                        <button class="button button_purple">more</button>
-                    </div>
-
-                    <div class="col-6">
-                        <h1 class="number">
-                            04
-                        </h1>
-                        <p class="subtitle">
-                            Best Pricing
-                        </p>
-                        <p class="col-p">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam accusantium necessitatibus ullam eius suscipit quae, commodi a natus odit repellat quasi laudantium tenetur quibusdam porro?
-                        </p>
-
-                        <button class="button button_purple">more</button>
-                    </div>
-
-                    <div class="col-6">
-                        <h1 class="number">
-                            05
-                        </h1>
-                        <p class="subtitle">
-                            Innovations
-                        </p>
-                        <p class="col-p">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam accusantium necessitatibus ullam eius suscipit quae, commodi a natus odit repellat quasi laudantium tenetur quibusdam porro?
-                        </p>
-
-                        <button class="button button_purple">more</button>
-                    </div>
-
-                    <div class="col-6">
-                        <h1 class="number">
-                            06
-                        </h1>
-                        <p class="subtitle">
-                            24/7 Support
-                        </p>
-                        <p class="col-p">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam accusantium necessitatibus ullam eius suscipit quae, commodi a natus odit repellat quasi laudantium tenetur quibusdam porro?
-                        </p>
-
-                        <button class="button button_purple">more</button>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
     </main>
-
-    <footer>
-
-    </footer>
 
 </body>
 </html>
